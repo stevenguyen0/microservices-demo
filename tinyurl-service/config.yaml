@@ -1,4 +1,4 @@
-defaultName: ${DW_DEFAULT_NAME:-travelmob}
+defaultName: ${DW_DEFAULT_NAME:-tinyurl}
 
 # Database settings.
 database:

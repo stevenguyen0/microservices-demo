@@ -1,0 +1,26 @@
+1) This project is built using maven. Using DropWizard framework. To run this example:
+
+mvn clean install exec:java -Dexec.mainClass="com.demo.ms.tinyurlservice.App" -Dexec.args="server config.yaml"
+
+This command start a jetty server on localhost and port 8080 and reads configurations from config.yaml
+
+this solution is using H2 (in memory) for database layer, Dropwizard for exposing Rest APIs(Jersey) and HTML for front end
+
+2) The views are located at: /travelmob/src/main/resources/views. The home page is index.html
+
+Go to the home page: http://localhost:8080/app
+
+3) Rest API resources: src/main/java/com/demo/ms/tinyurlservice/resources/TinyUrlResource.java
+All the apis are hosted at: /api/v1/tinyurls
+
+a) To create a new shortened URL: 
+curl -v -X POST -H "Content-Type: application/json" -d "http://google.com" localhost:8080/api/v1/tinyurls
+
+b) To view all shortened URL: 
+curl -v GET localhost:8080/api/v1/tinyurls
+
+c) To make use of shortened URL to go to the actual URL: 
+curl -v GET localhost:8080/api/v1/tinyurls/realurl/{shortenName}
+
+
+

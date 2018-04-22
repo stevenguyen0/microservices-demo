@@ -14,7 +14,7 @@ import com.demo.ms.accountservice.entity.Account;
 import com.demo.ms.accountservice.repository.AccountRepository;
 
 @RestController
-@RequestMapping("/v1/accounts")
+@RequestMapping("api/v1/accounts")
 public class AccountService {
 	
 	@Autowired

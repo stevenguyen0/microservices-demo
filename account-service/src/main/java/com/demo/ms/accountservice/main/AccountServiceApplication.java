@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan("com.demo.ms.accountservice.entity")
 @EnableJpaRepositories("com.demo.ms.accountservice.repository")
 @EnableJpaAuditing
-@EnableEurekaClient
+//@EnableEurekaClient
 public class AccountServiceApplication {
 
 	public static void main(String[] args) {

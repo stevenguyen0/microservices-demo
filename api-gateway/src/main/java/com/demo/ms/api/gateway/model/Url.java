@@ -1,4 +1,4 @@
-package com.redhat.coolstore.api_gateway.model;
+package com.demo.ms.api.gateway.model;
 
 public class Url {
 	private long id;

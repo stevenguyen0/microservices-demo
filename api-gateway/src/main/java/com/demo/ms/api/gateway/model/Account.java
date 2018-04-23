@@ -1,4 +1,4 @@
-package com.redhat.coolstore.api_gateway.model;
+package com.demo.ms.api.gateway.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

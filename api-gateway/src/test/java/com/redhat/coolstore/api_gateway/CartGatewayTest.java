@@ -22,13 +22,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.demo.ms.api.gateway.model.Product;
+import com.demo.ms.api.gateway.model.ShoppingCart;
+import com.demo.ms.api.gateway.model.ShoppingCartItem;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.redhat.coolstore.api_gateway.model.Product;
-import com.redhat.coolstore.api_gateway.model.ShoppingCart;
-import com.redhat.coolstore.api_gateway.model.ShoppingCartItem;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)

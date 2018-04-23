@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.redhat.coolstore.api_gateway;
+package com.demo.ms.api.gateway;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
@@ -30,7 +30,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 
-import com.redhat.coolstore.api_gateway.model.Account;
+import com.demo.ms.api.gateway.model.Account;
 
 @Component
 public class AccountGateway extends RouteBuilder {
